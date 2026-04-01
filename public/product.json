@@ -1,0 +1,17 @@
+{
+    "title": "Apple iPhone 15 (Blue, 256 GB)",
+    "rating": {
+        "rate": 4.6,
+        "ratings": 273456,
+        "reviews": 9540
+    },
+    "price": 74990,
+    "features": [
+        "256 GB ROM",
+        "15.49 cm (6.1 inch) Super Retina XDR Display",
+        "48MP + 12MP | 12MP Front Camera",
+        "A16 Bionic Chip, 6 Core Processor Processor",
+        "1 year warranty for phone and 1 year warranty for in Box Accessories"
+    ],
+    "image": "iphone-blue.png"
+}
