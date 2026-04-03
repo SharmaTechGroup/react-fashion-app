@@ -28,9 +28,10 @@ import { ContextDemo } from './components/context-demo/context-demo.jsx'
 import { FakestoreIndex } from './fakestore/fakestore-index.jsx'
 import { WeatherIndex } from './components/weather/weather-index.jsx'
 import { TutorialIndex } from './tutorials/tutorial-index.jsx'
+import { ShoppingIndex } from './shopping/shopping-index.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <TutorialIndex />
+    <ShoppingIndex />
   </StrictMode>,
 )

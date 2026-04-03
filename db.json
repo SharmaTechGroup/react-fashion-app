@@ -1,0 +1,38 @@
+{
+    "categories": [
+        {
+            "CategoryId": 1,
+            "Name": "Electronics"
+        },
+        {
+            "CategoryId": 2,
+            "Name": "Fashion"
+        }
+    ],
+    "products": [
+        {
+            "Title": "Samsung TV",
+            "Price": 34000.33,
+            "Rating": 3.4,
+            "CategoryId":1
+        },
+        {
+            "Title": "Mobile",
+            "Price": 14000.33,
+            "Rating": 4.4,
+            "CategoryId":1
+        },
+        {
+            "Title": "Kids Jeans",
+            "Price": 4000.33,
+            "Rating": 3.8,
+            "CategoryId":2
+        },
+        {
+            "Title": "Shirt",
+            "Price": 4000.33,
+            "Rating": 4.2,
+            "CategoryId":2
+        }
+    ]
+}

@@ -22,7 +22,7 @@ export function TutorialIndex(){
                     <Routes>
                         <Route path="/" element={<TutorialHome />} />
                         <Route path="java" element={<JavaTutorial />} />
-                        <Route path="react" element={<ReactTutorial />} />
+                        <Route path="react/:topic/:subtopic" element={<ReactTutorial />} />
                         <Route path="weather" element={<WeatherIndex />} />
                         <Route path="*" element={<div className="text-danger"><h3>Not Found</h3><p>Page you requested not found</p></div>} />
                     </Routes>
