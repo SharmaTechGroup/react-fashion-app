@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 
-export function ShoppingHome(){
+export default function ShoppingHome(){
 
     const [categories, setCategories] = useState([{CategoryId:0, Name:null}]);
 
@@ -24,10 +24,18 @@ export function ShoppingHome(){
             <ul className="list-group w-25 mt-3">
               {
                 categories.map(category=>
-                    <li key={category.CategoryId} className="list-group-item list-group-item-primary my-2"> <Link to={`products/${category.CategoryId}`}>{category.Name}</Link> </li>
+                    <li key={category.CategoryId} className="list-group-item list-group-item-primary my-2"> <Link to={`/products/${category.CategoryId}`}>{category.Name}</Link> </li>
                 )
               }
             </ul>
+            <div className="w-25">
+               <form method="get" action="/results">
+                <div className="input-group">
+                 <input type="text" name="search" placeholder="search" className="form-control" />
+                 <button className="bi bi-search btn btn-dark"></button>
+               </div>
+               </form>
+            </div>
         </div>
     )
 }

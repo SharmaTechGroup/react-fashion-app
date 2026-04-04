@@ -1,12 +1,14 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom"
+import { Link, useOutletContext, useParams } from "react-router-dom"
 
 
 export function ShoppingDetails(){
 
     let params = useParams();
     const [product, setProduct] = useState({id:null, Title:null, Price:0, Rating:0, CategoryId:0});
+
+    let outletcontext = useOutletContext();
 
     function LoadProduct(){
         axios.get(`http://127.0.0.1:3000/products/${params.prodid}`)
@@ -23,7 +25,9 @@ export function ShoppingDetails(){
         <div className="container-fluid">
             <div className="card m-2 p-2" style={{width:'250px'}}>
                 <div className="card-header">
-                    Product Details
+                    Product Details 
+                    <br/>
+                    {outletcontext[0].Title}
                 </div>
                 <div className="card-body">
                      <dl>

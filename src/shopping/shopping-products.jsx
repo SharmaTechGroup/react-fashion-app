@@ -35,7 +35,7 @@ export function ShoppingProducts(){
                     </ol>
                 </div>
                 <div className="col-8">
-                     <Outlet />
+                     <Outlet context={products} />
                 </div>
             </section>
             <Link to='/'>Back to Home</Link>
