@@ -29,9 +29,14 @@ import { FakestoreIndex } from './fakestore/fakestore-index.jsx'
 import { WeatherIndex } from './components/weather/weather-index.jsx'
 import { TutorialIndex } from './tutorials/tutorial-index.jsx'
 import { ShoppingIndex } from './shopping/shopping-index.jsx'
+import { CookiesProvider } from 'react-cookie'
+import { RouterProvider } from 'react-router-dom'
+import router from './routes/routes.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ShoppingIndex />
+    <CookiesProvider>
+      <RouterProvider router={router} />
+    </CookiesProvider>
   </StrictMode>,
 )

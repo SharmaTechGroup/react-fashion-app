@@ -38,7 +38,7 @@ export function ShoppingProducts(){
                      <Outlet context={products} />
                 </div>
             </section>
-            <Link to='/'>Back to Home</Link>
+            <Link to='/home'>Back to Home</Link>
         </div>
     )
 }

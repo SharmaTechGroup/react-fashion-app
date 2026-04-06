@@ -25,6 +25,7 @@ export function ShoppingIndex(){
                             <Route path="details/:prodid" element={<ShoppingDetails />} />
                         </Route>
                         <Route path="results" element={<ShoppingResults />} />
+                        <Route path="login" element={<ShoppingLogin />} />
                     </Routes>
 
                    </Suspense>

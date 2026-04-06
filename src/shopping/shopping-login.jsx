@@ -1,9 +1,12 @@
 import { useFormik } from "formik"
+import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
 
 export function ShoppingLogin(){
 
     let navigate = useNavigate();
+
+    const [cookies, setCookie, removeCookie] = useCookies(['username']);
 
     const formik = useFormik({
         initialValues: {
@@ -12,6 +15,7 @@ export function ShoppingLogin(){
         },
         onSubmit: (user)=>{
             if(user.Password==="admin"){
+                setCookie('username', user.UserName);
                 navigate('/home');
             } else {
                 alert("Invalid Password - Try Again");
